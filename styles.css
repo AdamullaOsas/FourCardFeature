@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -126,11 +126,7 @@ body {
     border-top: 4px solid hsl(34, 97%, 64%);
 }
 
-@media (max-width: 420px) {
-    .container {
-        height: auto;
-    }
-
+@media screen and (max-width: 800px) {
     .text {
         margin: 85px 32px 0 32px;
         max-height: none;
