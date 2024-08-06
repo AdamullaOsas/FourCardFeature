@@ -4,25 +4,57 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles.css" />
         <title>Four card feature section</title>
     </head>
     <body>
-        <div class="text">
-            <div class="title">
-                <h1>Reliable, efficient delivery</h1>
-                <h1>Powered by Technology</h1>
+        <main class="container">
+            <div class="text">
+                <h1 class="first">Reliable, efficient delivery</h1>
+                <h1 class="second">Powered by Technology</h1>
+                <p>
+                    Our Artificial Intelligence powered tools use millions of
+                    project data points to ensure that your project is
+                    successful
+                </p>
             </div>
-            <p>
-                Our Artificial Intelligence powered tools use millions of
-                project data points to ensure that your project is successful
-            </p>
             <div class="boxes">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box" id="one">
+                    <h2>Supervisor</h2>
+                    <p>Monitors activity to identify project roadblocks</p>
+                    <img src="./images/icon-supervisor.svg" alt="supervisor" />
+                </div>
+                <div class="box" id="two">
+                    <h2>Team Builder</h2>
+                    <p>
+                        Scans our talent network to create the optimal team for
+                        your project
+                    </p>
+                    <img
+                        src="./images/icon-team-builder.svg"
+                        alt="team builder"
+                    />
+                </div>
+                <div class="box" id="three">
+                    <h2>Karma</h2>
+                    <p>Regularly evaluates our talent to ensure quality</p>
+                    <img src="./images/icon-karma.svg" alt="karma" />
+                </div>
+                <div class="box" id="four">
+                    <h2>Calculator</h2>
+                    <p>
+                        Uses data from past projects to provide better delivery
+                        estimates
+                    </p>
+                    <img src="./images/icon-calculator.svg" alt="Calculator" />
+                </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
