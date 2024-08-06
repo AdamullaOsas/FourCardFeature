@@ -93,8 +93,8 @@ body {
 }
 
 .box img {
-    width: 64px;
-    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
 
     position: absolute;
     bottom: 32px;
@@ -123,4 +123,37 @@ body {
 
 #three {
     border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+@media (max-width: 420px) {
+    .container {
+        height: auto;
+    }
+
+    .text {
+        margin: 85px 32px 0 32px;
+        max-height: none;
+        text-align: center;
+    }
+
+    .text .first,
+    .text .second {
+        font-size: 24px;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+        width: auto;
+        max-height: none;
+        margin: 72px 32px 78px 32px;
+    }
+
+    .box {
+        max-width: 320px;
+
+        width: fill;
+    }
 }
